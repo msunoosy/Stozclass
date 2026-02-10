@@ -1,0 +1,27 @@
+.simple h2{
+    font-size: 64px;
+}
+
+.Primary{
+    color: #651FFF;
+}
+
+
+
+.simple{
+    height: 625px;
+    background-color: #00E5FF;
+}
+.my-btn{
+      background-color:#651FFF ;
+    height: 48px;
+    width: 402px;
+    border-radius: 20px;
+    text-align: center;
+    
+}
+.my-btn a{
+    text-decoration: none;
+   color: white;
+   
+}

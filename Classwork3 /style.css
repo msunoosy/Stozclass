@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+font-family: 'Poppins', sans-serif;
+
+}
+
+.container{
+    max-width: 1114px;
+    margin: 0px auto;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+
+header{
+    padding: 20px 0px;
+}
+
+.head-wrapper{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.head-wrapper nav{
+       display: flex;
+       gap: 40px;
+}
+
+.btn{
+    padding: 15px 20px;
+    border-radius: 50px;
+}
+
+.btn.primary {
+    background-color: #231A36;
+}
+
+.btn.secondary{
+    background-color: rgba(255, 250, 249, 0.2);
+    color: white; 
+}
+
+.banner{
+    text-align: center;
+    padding: 50px 0px 100px 0px;
+ 
+}
+
+.banner h1{
+    font-size: 94px;
+    margin-bottom:24px;
+    color: white;
+}
+
+.banner p {
+    color: white;
+    margin-bottom: 35px;
+}
+
+main{
+    background-image: url("./image/banner.png");
+   background-size: cover;
+}
+
+.trusted-clients-wrapper p{
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 70px;
+    color: #B2B7BE;
+}
+
+.clients-logos{
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+  flex-wrap: wrap;
+  gap: 50px; 
+}
+
+.clients-logos img {
+  flex: 0 0 calc((100% / 6) - (50px * (5 / 6)));
+  
+}
+
+.Solution h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #231A36;
+}
+
+.Solution p{
+    text-align: center;
+    margin-bottom: 24px;
+    color: #426666;
+}
+
+.first-cart {
+    margin-top: 40px;
+  
+}
+
+.first-cart label{
+    font-size: 14px;
+    color: #B33CDB;
+}
+
+.first-cart h3{
+    margin: 20px 0px 9px 0px;
+   font-size: 30px;
+}
+
+.first-cart a{
+    margin-top: 15px;
+    color: #42424A;
+}
+
+.first-cart p{
+  font-size: 16px;
+    color: #426666;
+}
+
+
+.cart-container{
+    max-width: 750px;
+    margin: 0px auto;
+    
+}
+
+.first-card-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 97px;
+}
+
+.community-cart-wrapper label{
+    color: #FBBA33;
+
+}
+
+
+.service-cart-wrapper label{
+    color: #DE2879;
+}
+
+.counter{
+    background-color: #231A36;
+    height: 590px;
+    width: 1440;
+}
+
+.counter h4{
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+.media{
+    text-align: center;
+    padding: 116px 0px 20px 0px;
+}
+
+.media p{
+    color: #7B9292;
+}
+
+.numbers label{
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+.numbers p{
+font-size: 14px;
+color: #7B9292;
+}
+
+
+
+.number-wrapper{
+    display: flex;
+    justify-content: space-around; 
+    margin-top: 120px;
+}
+
+.need > div h2{
+    padding: 110px 0px 0px 0px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold
+}
+
+
+
+.need > div p{
+    text-align: center;
+    margin: 20px 0px 95px 0px;
+    color: #426666;
+}
+
+.need-wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.need-img-container{
+    position: relative;
+
+}
+
+
+
+.need-img-container > div >img{
+    width: 100%;
+}
+
+
+
+.cart-state{
+padding: 20px 50px 15px 50px;
+height: 170px;
+width: 270px;
+background-color: #FFFFFF;
+position: absolute;
+bottom: -65px;
+left: 0px;
+}
+
+.cart-state >div{
+    display: flex;
+    gap: 20px;
+}
+
+.cart-state a{
+    color: #B33CDB;
+}
+
+.cart-state >div>div span{
+font-size: 10px;
+
+}
+
+.happy{
+    margin-top: 80px;
+}
+
+.happy >div>div h2{
+    font-size: 40px;
+}
+
+.sec-head {
+   text-align: center;
+ 
+}
+
+.sec-head h2{
+    position: relative;
+    display: inline-block;
+}
+
+.sec-head h2 img{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -30px;
+    left: -25px;
+   
+}
+.think{
+    margin-top: 70px;
+text-align: center;
+
+}
+
+
+@media only screen and (max-width: 700px){
+    .head-wrapper{
+        flex-direction: column;
+
+    }
+
+    .banner h1{
+        font-size: 48px;
+    }
+
+    .clients-logos{
+        flex: 0 0 calc(100% / 2 - 40px);
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .first-card-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .first-cart {
+    text-align: center;
+    }
+}
+
+
+@media only screen and (min-width: 1100px) {
+
+    .line-break {
+        display: block;
+    }
+
+
+}

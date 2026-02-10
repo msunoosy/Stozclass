@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1127px;
+    margin: 0 auto;
+    padding: 0 auto;
+
+}
+
+
+
+.secondary{
+text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.Primary{
+     color: white;
+     text-decoration: none;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-weight: 500;
+    border-radius: 10px; 
+    background-color: #651FFF;
+}
+
+.navwrap{
+    padding: 10px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.line-break {
+  display: block;
+}
+
+.web{
+    color: #651FFF;
+}
+.banerwrap{
+    width: auto;
+    height: auto;
+    text-align: center;
+    background-color: #EBE5FA;
+}
+.banerwrap > div{
+padding-bottom: 50px;
+}
+.banerwrap h2{
+    padding-top: 85px;
+    font-size: 56px;
+}
+
+.banerwrap p{
+  font-size: 20px;
+  padding: 50px 0px;
+  color: #5C5F6E;
+}
+
+.lightningwrapper{
+    text-align: center;
+    margin-top: 130px;
+}
+
+.lightningwrapper h2{
+    font-size: 48px;
+}
+
+.lightningwrapper p{
+    font-size: 18px;
+    color: #838696;
+}

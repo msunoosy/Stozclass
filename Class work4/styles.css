@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    width: 1440px;
+    margin-top: 15px;
+}
+
+.signbtn{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.createbtn{
+    text-decoration: none;
+    color: white;
+    background-color: #2563EB;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.container{
+    max-width: 1124px;
+    margin: 0 auto;
+    padding: 0 auto;
+
+}
+
+.main{
+    text-align: center;
+}
+
+.btn-sca{
+    display: inline-block;
+}

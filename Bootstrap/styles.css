@@ -1,27 +1,50 @@
-.simple h2{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.simple h2 {
     font-size: 64px;
 }
 
-.Primary{
+.Primary {
     color: #651FFF;
 }
 
-
-
-.simple{
+.simple {
     height: 625px;
     background-color: #00E5FF;
 }
-.my-btn{
-      background-color:#651FFF ;
+
+.my-btn {
+    background-color: #651FFF;
     height: 48px;
     width: 402px;
     border-radius: 20px;
-    text-align: center;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
-.my-btn a{
+
+.my-btn a {
     text-decoration: none;
-   color: white;
-   
+    color: white;
 }
+
+.storage-wrapper{
+    background-color: white;
+    width: 563px;
+    height: 574px;
+    border-radius: 25px;
+  
+
+}
+
+.transfer{
+    width: 564px;
+    height: 474px;
+    background-color: #651FFF;
+    border-radius: 25px;
+}
+

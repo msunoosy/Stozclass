@@ -93,3 +93,17 @@ padding-bottom: 50px;
 .works h2{
     font-size: 48px;
 }
+
+.footer{
+    background-color:#1A284E;
+    color: aliceblue;
+}
+
+
+.footer ul{
+list-style: none;
+padding: 0px;
+}
+.footer ul li{
+margin-bottom: 5px;
+}

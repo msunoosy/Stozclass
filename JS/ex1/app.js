@@ -38,9 +38,11 @@ function addTask(e) {
     let listArr = JSON.parse(localStorage.getItem("listArr")) || [];
 
     // Add new value to the array
-    listArr.push(taskInput.value);
+    listArr.push(taskInput.value.trim());
     // Save updated array back to localStorage
     localStorage.setItem("listArr", JSON.stringify(listArr));
+
+    taskInput.value=""
 
     // // Create element
     // const li = document.createElement("li");

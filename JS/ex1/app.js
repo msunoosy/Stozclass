@@ -78,12 +78,13 @@ function clearTask() {
   // taskList.innerHTML = "";
 
   const listItems = Array.from(taskList.children);
-
-  console.log(listItems);
-
   listItems.forEach(function (li, index, arr) {
     li.remove();
   });
+ let listArr = JSON.parse(localStorage.getItem('listArr')) || [];
+ listArr=[];
+ localStorage.setItem('listArr', JSON.stringify(listArr));
+
 }
 
 function removeTask(e) {

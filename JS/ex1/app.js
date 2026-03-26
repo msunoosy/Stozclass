@@ -7,7 +7,7 @@ const clearBtn = document.querySelector(".clear-tasks");
 const filter = document.querySelector("#search");
 
 // Load all event listerners
-
+document.addEventListener("DOMContentLoaded", loadTasks);
 function loadEventListerners() {
   // Add task event
   form.addEventListener("submit", addTask);
@@ -22,9 +22,26 @@ function loadEventListerners() {
 
 loadEventListerners();
 
-// let tasksArr = Array.from(document.querySelectorAll(".collection-item"))
-// .map(task => task.innerText);
-// localStorage.setItem("tasksArr", JSON.stringify(tasksArr));
+
+function loadTasks() {
+  // Get array from localStorage
+  const listArr = JSON.parse(localStorage.getItem('listArr')) || [];
+
+  // Loop through each item
+  listArr.forEach(function(task) {
+    const li = document.createElement("li");
+    li.className = "collection-item";
+    li.innerText = task;
+
+    const link = document.createElement("a");
+    link.className = "delete-item secondary-content";
+    link.innerHTML = `<i class="fa fa-remove"></i>`;
+
+    li.appendChild(link);
+    taskList.appendChild(li);
+  });
+}
+
 
 function addTask(e) {
   e.preventDefault();
@@ -32,46 +49,28 @@ function addTask(e) {
   if (taskInput.value === "") {
     alert("Please fill the form");
   } else {
-    // Get the input value
-
-    // Retrieve existing array from localStorage, or start with empty array
+   
     let listArr = JSON.parse(localStorage.getItem("listArr")) || [];
-
-    // Add new value to the array
     listArr.push(taskInput.value.trim());
-    // Save updated array back to localStorage
     localStorage.setItem("listArr", JSON.stringify(listArr));
-
     taskInput.value=""
 
-    // // Create element
-    // const li = document.createElement("li");
-
-    // // Add class
-    // li.className = "collection-item";
-
-    // // Add a inner text
-
-    // const value= taskInput.value.trim()
-    // let item=JSON.parse(localStorage.getItem("myArray")) || [];
-    // item.push(value)
-    // console.log(value)
-    //   li.innerText = taskInput.value;
-
-    // // Create a new link element
-    // const link = document.createElement("a");
-
-    // // Add class to link
-    // link.className = "delete-item secondary-content";
-
-    // // Add a icon into link
-    // link.innerHTML = `<i class="fa fa-remove"></i>`;
-
-    // // Add a link to li
-    // li.appendChild(link);
-
-    // // Add a li to ul
-    // taskList.appendChild(li);
+    // Create element
+    const li = document.createElement("li");
+    // Add class
+    li.className = "collection-item";
+    // Add a inner text
+      li.innerText = taskInput.value;
+    // Create a new link element
+    const link = document.createElement("a");
+    // Add class to link
+    link.className = "delete-item secondary-content";
+    // Add a icon into link
+    link.innerHTML = `<i class="fa fa-remove"></i>`;
+    // Add a link to li
+    li.appendChild(link);
+    // Add a li to ul
+    taskList.appendChild(li);
   }
 }
 

@@ -8,6 +8,7 @@ const filter = document.querySelector("#search");
 
 // Load all event listerners
 document.addEventListener("DOMContentLoaded", loadTasks);
+
 function loadEventListerners() {
   // Add task event
   form.addEventListener("submit", addTask);
@@ -53,8 +54,6 @@ function addTask(e) {
     let listArr = JSON.parse(localStorage.getItem("listArr")) || [];
     listArr.push(taskInput.value.trim());
     localStorage.setItem("listArr", JSON.stringify(listArr));
-    taskInput.value=""
-
     // Create element
     const li = document.createElement("li");
     // Add class
@@ -71,6 +70,7 @@ function addTask(e) {
     li.appendChild(link);
     // Add a li to ul
     taskList.appendChild(li);
+    taskInput.value=""
   }
 }
 
@@ -87,7 +87,16 @@ function clearTask() {
 }
 
 function removeTask(e) {
-  e.target.parentElement.parentElement.remove();
+ const li= e.target.parentElement.parentElement;
+      let listArr = JSON.parse(localStorage.getItem('listArr')) || [];
+
+    const taskText = li.firstChild.textContent.trim();
+
+    listArr = listArr.filter(task => task !== taskText);
+
+    localStorage.setItem('listArr', JSON.stringify(listArr));
+
+    li.remove();
 }
 
 function search(e) {

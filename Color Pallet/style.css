@@ -1,19 +1,38 @@
-#palette {
-  display: flex;
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
 }
 
-.color-card {
+#palette {
+  display: flex;
+  margin-top: 20px;
+}
+
+.color {
   flex: 1;
-  height: 200px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  color: #fff;
+  color: white;
   font-weight: bold;
+  padding: 10px;
+}
+
+.color p {
+  margin: 0;
+}
+
+.color button {
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
 .locked {
-  outline: 5px solid black;
+  border: 5px solid black;
 }

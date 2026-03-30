@@ -21,15 +21,11 @@ body {
   padding: 10px;
 }
 
-.color p {
-  margin: 0;
-}
-
 .color button {
   background: rgba(0,0,0,0.5);
   border: none;
   color: white;
-  padding: 5px 10px;
+  padding: 5px;
   cursor: pointer;
 }
 

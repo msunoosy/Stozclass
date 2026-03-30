@@ -1,0 +1,19 @@
+#palette {
+  display: flex;
+}
+
+.color-card {
+  flex: 1;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+}
+
+.locked {
+  outline: 5px solid black;
+}

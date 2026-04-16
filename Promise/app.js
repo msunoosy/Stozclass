@@ -31,4 +31,23 @@ function deleteuser(id){
   });
 }
 
-deleteuser(6)
+function updateUser(id) {
+  fetch(`https://69e114e8b1cb62b9f3168d86.mockapi.io/api/v1/user/${id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      id:id,
+      name: "sunoos"
+    })
+  })
+  .then(res => res.json())
+  .then(data => {
+    console.log("User updated:", data);
+  })
+  .catch(err => {
+    console.log("Error:", err);
+  });
+}
+
